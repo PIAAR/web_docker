@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" type="text/css" href="https://semantic/dist/semantic.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="semantic/dist/semantic.min.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>This is the New Dashboard</title>
+    </head>
+<body>
+    <div>
+        <h1>All Stocks</h1>
+        <h2>Click on the stock name to view the company information.</h2>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Stock_ID</th>
+                    <th>Exchange</th>
+                    <th>Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stock in stocks %}
+                {% for stock in stock_prices %}
+                <tr>
+                    <td>{{ stock.id }}</td>
+                    <td>{{ stock.exchange }}</td>
+                    <td>{{ stock.company }}</td>
+                    <td>{{ stock_prices.volume}}</td>
+                </tr>
+                {% endfor %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

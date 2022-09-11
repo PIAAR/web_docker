@@ -1,0 +1,43 @@
+{% extends "./layout.html" %}
+{% block content %}
+<div class="container top">
+    <h1>RMI Stock List</h1>
+</div>
+<div class="container">
+<h1>Stock Dashboard</h1>
+<h2>Click on any stock symbol to research or use the drop down to filter list.</h2>
+<div class="filter">
+    <form method="get">
+        <select name="filter">
+            <option value="new_intraday_highs">New Intraday Highs</option>
+            <option value="new_closing_highs">New Closing Highs</option>
+            <option value="new_intraday_lows">New Intraday Lows</option>
+            <option value="new_closing_lows">New Closing Lows</option>
+            <!-- <option value=""></option> -->
+        </select> 
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+
+<table class="content-table">
+    <thead> 
+        <tr>
+            <td>ID</td>
+            <td>Symbol</td>
+            <td>EX</td>
+            <td>Company</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stock in stocks %}
+        <tr>                
+            <td>{{ stock.id }}</td>
+            <td><a href="{{ stock.stock_symbol }}">{{ stock.stock_symbol }}</a></td>
+            <td>{{ stock.exchange }}</td>
+            <td><a href="{{ stock.stock_symbol }}">{{ stock.company }}</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

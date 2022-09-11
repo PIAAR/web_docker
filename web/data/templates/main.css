@@ -1,0 +1,24 @@
+.container{
+    margin: 0px 50%;
+    padding: 0;
+}
+.container.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+.container.content-table thead tr {
+    background-color: darkblue;
+    color: white;
+}
+
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+    size: 200%;
+  }

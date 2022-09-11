@@ -6,16 +6,24 @@
 #   from Yfinance
 # 
 
+from asyncore import read
 from tracemalloc import start
 from typing_extensions import Self
 
 
-Class Strategy(self) as start:
+class Strategy:    
+    market_class = [
+        {'market':['stock','crypto','forex']}
+        ]
+    green = 'green_light'
     
-    global = self.global
-    
+    def __init__(self):
+        go_flag = Strategy.green
+
     def stocks(self):
-        pass
+        if Strategy.go_flag == True:
+            self.light  == Strategy.green
+            return self.light
 
     def crypto(self):
         pass

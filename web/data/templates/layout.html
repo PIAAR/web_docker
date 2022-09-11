@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Stock List</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+        .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 30px;
+        text-align: center;
+        }
+
+        .flex-item-left {
+        background-color: #f1f1f1;
+        padding: 10px;
+        flex: 50%;
+        }
+
+        .flex-item-right {
+        background-color: dodgerblue;
+        padding: 10px;
+        flex: 50%;
+        }
+        .container {
+            background-color: lightblue;
+            margin: 0px 5%;
+            padding: 0; 
+        }
+        .containter .top{
+            background-color:darkblue;
+            color: white;
+        }
+            .content-table {
+                border-collapse: collapse;
+                margin: 20px 0;
+                font-size: 0.9em;
+                min-width: 400px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+            }
+            .content-table thead tr {
+                background-color: darkblue;
+                color: white;
+                padding: 0px 5px;
+            }
+            .content-table th, .content-table td {
+                padding: 12px 20px;
+            }
+            .content-table tbody tr:nth-of-type(even) {
+                background-color: lightgray;
+            }
+            .content-table tbody tr:last-of-type {
+                border-bottom: 2px solid darkblue;
+            }
+
+        body {
+            background-color: white;
+            margin: 1% 10%;
+            }
+
+            h1 {
+                color: navy;
+                margin-left: 5%;
+            }
+            h2 {
+                color: darkblue;
+                margin-left: 10px;
+            }
+            .chart {
+                display:block;
+                position:relative;
+                margin:auto;
+                padding:20px 0px 0px 0px;
+            }
+        .filter {
+            margin:5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container nav">
+        <ul>
+            <a href="/">Home</a>
+            <a href="/">Research</a>
+            <a href="/">Market</a>
+            <a href="/">Account</a>
+            <a href="/">Exit</a>
+        </ul>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
