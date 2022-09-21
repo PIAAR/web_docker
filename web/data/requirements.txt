@@ -51,7 +51,7 @@ pyparsing==3.0.9
 pypiwin32==223
 Pyrebase4==4.5.0
 python-dateutil==2.8.2
-python-jwt==3.3.2
+python-jwt==3.3.4
 python-utils==3.3.3
 pytz==2022.1
 pywin32==304
