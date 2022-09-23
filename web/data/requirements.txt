@@ -41,7 +41,7 @@ packaging==21.3
 pandas==1.4.2
 progressbar==2.5
 progressbar2==4.0.0
-protobuf==3.20.1
+protobuf==3.20.2
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.21
