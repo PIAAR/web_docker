@@ -26,7 +26,7 @@ httplib2==0.20.4
 idna==3.3
 Jinja2==3.1.2
 jwcrypto==1.4
-lxml==4.8.0
+lxml==4.9.1
 MarkupSafe==2.1.1
 msgpack==1.0.3
 multidict==6.0.2
